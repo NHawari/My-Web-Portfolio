@@ -186,6 +186,8 @@
         const paginationLinks = document.querySelectorAll(".page-link:not(.prev):not(.next)");
         const prevButton = document.querySelector(".page-link.prev");
         const nextButton = document.querySelector(".page-link.next");
+        var pageNumbers = document.querySelector('.page-numbers');
+
 
         function getProjectsPerPage(width) {
             if (width > 767) {
@@ -223,18 +225,120 @@
         paginationLinks.forEach(link => {
             link.addEventListener("click", function() {
                 const page = parseInt(this.dataset.page);
+                if (window.innerWidth < 767) {
+                    paginationLinks.forEach(item => {
+                        item.style.transform = 'translateX(0)';
+                    });
+                    if (page === 1) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(0)'; 
+                        });
+                    } else if (page === 2) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(0)'; 
+                        });
+                    } else if (page === 3) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-2.9rem)';
+                        });
+                    } else if (page === 4) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-5.8rem)';
+                        });
+                    } else if (page === 5) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-8.7rem)';
+                        });
+                    } else if (page === 6) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-11.6rem)';
+                        });
+                    } else {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-11.6rem)'; 
+                        });
+                    }
+                } 
                 showPage(page);
             });
         });
     
         prevButton.addEventListener("click", function() {
             if (currentPage > 1) {
+                if (window.innerWidth < 767) {
+                    paginationLinks.forEach(item => {
+                        item.style.transform = 'translateX(0)';
+                    });
+                    if (currentPage - 1 === 1) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(0)'; 
+                        });
+                    } else if (currentPage - 1 === 2) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(0)'; 
+                        });
+                    } else if (currentPage - 1 === 3) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-2.9rem)';
+                        });
+                    } else if (currentPage - 1 === 4) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-5.8rem)';
+                        });
+                    } else if (currentPage - 1 === 5) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-8.7rem)';
+                        });
+                    } else if (currentPage - 1 === 6) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-11.6rem)';
+                        });
+                    } else {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-11.6rem)'; 
+                        });
+                    }
+                }
                 showPage(currentPage - 1);
             }
         });
     
         nextButton.addEventListener("click", function() {
             if (currentPage < totalPages) {
+                if (window.innerWidth < 767) {
+                    paginationLinks.forEach(item => {
+                        item.style.transform = 'translateX(0)';
+                    });
+                    if (currentPage + 1 === 1) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(0)'; 
+                        });
+                    } else if (currentPage + 1 === 2) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(0)'; 
+                        });
+                    } else if (currentPage + 1 === 3) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-2.9rem)';
+                        });
+                    } else if (currentPage + 1 === 4) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-5.8rem)';
+                        });
+                    } else if (currentPage + 1 === 5) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-8.7rem)';
+                        });
+                    } else if (currentPage + 1 === 6) {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-11.6rem)';
+                        });
+                    } else {
+                        paginationLinks.forEach(item => {
+                            item.style.transform = 'translateX(-11.6rem)'; 
+                        });
+                    }
+                }
                 showPage(currentPage + 1);
             }
         });
