@@ -272,7 +272,7 @@ span{
 }
 .about-me p{
     text-align: justify;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: 600;
     
 }
@@ -306,8 +306,8 @@ span{
     width: 5rem;
 }
 .skill-set p{
-    font-size: 1.8rem;
-    font-weight: 800;
+    font-size: 1.7rem;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
@@ -355,7 +355,7 @@ span{
     }
     .page-numbers{
         display: flex;
-        overflow-x: auto; 
+        overflow-x: hidden; 
         white-space: nowrap;
         max-width: 7rem;  
         -webkit-overflow-scrolling: touch;
@@ -447,45 +447,49 @@ span{
 
 .ed-and-ex{
     overflow-x: hidden;
+    width: 100%;
 }
 .ed-and-container{
     display: flex;
+    flex-wrap: nowrap;
     animation: marquee 15s linear infinite;
     will-change: transform;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
+    gap: 2rem;
+    max-width: 100%;
 }
 .ed-and-container:hover{
     animation-play-state: paused;
 }
 .ed-and-ex-box{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 40rem;
-    height: 15rem;
-    padding: 2rem;
-    gap: 2rem;
+    flex-direction: column;
+    width: 50rem;
+    padding: 1rem;
+    gap: 1rem;
     align-items: center;
-    margin-right: 2rem;
     background-color: var(--text-color);
     color: var(--second-bg-color);
-    
     border-radius: 1rem;
     box-shadow: 0 0 6px var(--second-bg-color), 0 0 8px var(--second-bg-color);
 }
 .ed-and-ex-box img{
-    width: 10rem;
+    width: 15rem;
     height: auto;
 }
 .university-text{
-    width: 65%;
-    justify-content: left;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    min-width: 32rem;
 }
 .ed-and-ex-box h5{
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 .ed-and-ex-box h6{
@@ -498,11 +502,53 @@ span{
 }
 @keyframes marquee {
     0% {
-        transform: translateX(84rem);
+        transform: translateX(0rem);
     }
     100% {
-        transform: translateX(-42rem);
+        transform: translateX(-108rem);
     }
+}
+
+.certified{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.data-camp{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    gap: 0.2rem !important;
+}
+.data-camp h4{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.logo-certified{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.logo-certified p{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.logo-certified img{
+    width: 9rem !important;
+}
+.certified img{
+    width: 15rem;
+}
+.certified img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .portfolio{
