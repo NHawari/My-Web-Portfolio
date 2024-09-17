@@ -59,7 +59,7 @@ body{
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: var(--second-bg-color);
+    background-color: transparent;
     position: fixed;
     padding: 2rem 2rem;
 }
@@ -157,7 +157,7 @@ section{
     display: flex; 
 }
 .photo-home img{
-    width: 32vh;
+    width: 40vh;
     margin-bottom: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -196,12 +196,12 @@ section{
 
 .text-home h2, #text{
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 750 !important;
     line-height: 1;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .text-home h5{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 span{
@@ -250,6 +250,8 @@ span{
     background-color: var(--text-color);
     color: var(--second-bg-color);
     align-items: center;
+    margin: 0 2rem;
+    border-radius: 2rem;
 }
 .about span{
     color: var(--bg-color);
@@ -329,6 +331,18 @@ span{
         gap: 3rem;
         justify-content: center;
     }
+    .about{
+        padding: 5rem 5%;
+    }
+    .logo-certified p{
+        max-width: 18rem;
+    }
+    .portfolio{
+        padding: 5rem 5% !important;
+    }
+    .project-container{
+        width: 100%;
+    }
     .text-home{
         text-align: center;
         justify-content: center;
@@ -336,6 +350,15 @@ span{
     .skill-set {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .certified{
+        display: flex;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .data-camp, .logo-certified{
+        text-align: center !important;
+        justify-content: center !important;
     }
     .pagination {
         display: flex;
@@ -414,6 +437,10 @@ span{
     .page-link.mobile{
         display: none;
     }
+    .about-me p{
+        padding: 0 5rem;
+        text-align: center;
+    }
     
     .skill-set {
         flex-wrap: wrap;
@@ -443,11 +470,17 @@ span{
     .nc{
         display: none;
     }
+    .about-me p{
+        padding: 0 5rem;
+        text-align: center;
+    }
 }
 
 .ed-and-ex{
     overflow-x: hidden;
     width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 2px var(--text-color);
 }
 .ed-and-container{
     display: flex;
@@ -469,10 +502,7 @@ span{
     padding: 1rem;
     gap: 1rem;
     align-items: center;
-    background-color: var(--text-color);
-    color: var(--second-bg-color);
-    border-radius: 1rem;
-    box-shadow: 0 0 6px var(--second-bg-color), 0 0 8px var(--second-bg-color);
+    background-color: transparent;
 }
 .ed-and-ex-box img{
     width: 15rem;
@@ -510,50 +540,85 @@ span{
 }
 
 .certified{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 3rem;
 }
 .data-camp{
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    text-align: right;
-    gap: 0.2rem !important;
+    justify-content: center;
+    text-align: center;
+    gap: 0.3rem !important;
+    max-width: 20rem;
 }
-.data-camp h4{
-    font-size: 2rem;
-    font-weight: 800;
+.data-camp h4, .sub-certified h4{
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 .logo-certified{
     display: flex;
     width: 100%;
-    justify-content: right;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
     text-align: center;
 }
 .logo-certified p{
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 .logo-certified img{
     width: 9rem !important;
 }
 .certified img{
-    width: 15rem;
+    width: 12rem;
+}
+.certified.next.d-l a img{
+    width: 10rem !important;
 }
 .certified img:hover{
     transform: scale(1.05);
     cursor: pointer;
 }
+.certified-container{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.certified.next{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.sub-certified{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    max-width: 20rem;
+    flex-wrap: wrap;
+}
+.sub-certified .logo-certified{
+    justify-content: center;
+    text-align: center;
+}
+.sub-certified .logo-certified img{
+    width: 4rem !important;
+}
 
 .portfolio{
     min-height: 100vh;
-    padding: 5rem 10% 5rem 10%;
+    padding: 5rem 5% 5rem 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
