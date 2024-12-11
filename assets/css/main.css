@@ -636,6 +636,9 @@ span{
     font-size: 1.7rem;
     font-weight: 600;
 }
+.portfolio a{
+    color: var(--main-color);
+}
 .project-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);;
