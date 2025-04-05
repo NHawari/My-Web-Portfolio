@@ -465,8 +465,9 @@ span{
     }
     .ed-and-ex{
         box-shadow: 0 0 2px var(--text-color);
+        background-color: var(--text-color);
     }
-    .ed-and-ex-box{
+    ed-and-container, .ed-and-ex-box{
         background-color: var(--text-color);
         color: var(--second-bg-color);
     }
@@ -557,8 +558,9 @@ span{
     }
     .ed-and-ex{
         box-shadow: 0 0 2px var(--text-color);
+        background-color: var(--text-color);
     }
-    .ed-and-ex-box{
+    ed-and-container, .ed-and-ex-box{
         background-color: var(--text-color);
         color: var(--second-bg-color);
     }
