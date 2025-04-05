@@ -314,7 +314,7 @@ span{
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
     html{
-        font-size: 55%;
+        font-size: 50%;
         overflow-x: hidden;
     }
     .header{
@@ -422,8 +422,12 @@ span{
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     html{
-        font-size: 60%;
+        font-size: 55%;
         overflow-x: hidden;
+    }
+    body{
+        width: 60%;
+        margin: 0 auto;
     }
     .index{
         padding: 5rem 10% 0 10%;
@@ -461,6 +465,10 @@ span{
     }
 }
 @media screen and (min-width: 1280px){
+    body{
+        width: 60%;
+        margin: 0 auto;
+    }
     .navmenu{
         padding: 0.5rem 3rem !important;
     }
