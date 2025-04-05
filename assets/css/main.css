@@ -427,8 +427,10 @@ span{
         background-image: linear-gradient(180deg, var(--second-bg-color), var(--text-color));
     }
     body{
-        width: 60%;
-        margin: 0 20%;
+        padding: 0 20%;
+        background: transparent;
+    }
+    section{
         background: transparent;
     }
     .header{
@@ -496,8 +498,10 @@ span{
         background-image: linear-gradient(180deg, var(--second-bg-color), var(--text-color));
     }
     body{
-        width: 60%;
-        margin: 0 20%;
+        padding: 0 20%;
+        background: transparent;
+    }
+    section{
         background: transparent;
     }
     .header{
