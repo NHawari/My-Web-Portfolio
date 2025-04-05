@@ -451,9 +451,17 @@ span{
         flex-direction: column;
         gap: 3rem;
         justify-content: center;
+        box-shadow: none;
+    }
+    .index::before {
+        content: none; 
     }
     .about{
         padding: 5rem 5%;
+        color: var(--text-color);
+    }
+    .about span{
+        color: var(--main-color);
     }
     .logo-certified p{
         max-width: 18rem;
@@ -528,9 +536,17 @@ span{
         flex-direction: column;
         gap: 3rem;
         justify-content: center;
+        box-shadow: none;
+    }
+    .index::before {
+        content: none; 
     }
     .about{
         padding: 5rem 5%;
+        color: var(--text-color);
+    }
+    .about span{
+        color: var(--main-color);
     }
     .logo-certified p{
         max-width: 18rem;
