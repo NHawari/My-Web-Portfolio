@@ -202,7 +202,7 @@ section{
 }
 .text-home h5{
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 span{
     color: var(--main-color);
@@ -275,7 +275,7 @@ span{
 .about-me p{
     text-align: justify;
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 500;
     
 }
 .skill-set{
@@ -308,8 +308,8 @@ span{
     width: 5rem;
 }
 .skill-set p{
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 550;
 }
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
@@ -497,6 +497,23 @@ span{
         text-align: center !important;
         justify-content: center !important;
     }
+    
+    .project-box{
+        background-color: transparent;
+        border: 1.5px solid var(--main-color);
+    }
+    .project-box h4{
+        font-weight: 800;
+        color: var(--text-color);
+    }
+    .tools h6{
+        background-color: transparent;
+        color: var(--text-color);
+        border: 1px solid var(--main-color);
+    }
+    .project-box p{
+        color: var(--text-color);
+    }
     .contact h2{
         justify-content: center;
         text-align: center;
@@ -589,6 +606,22 @@ span{
     .data-camp, .logo-certified{
         text-align: center !important;
         justify-content: center !important;
+    }
+    .project-box{
+        background-color: transparent;
+        border: 1.5px solid var(--main-color);
+    }
+    .project-box h4{
+        font-weight: 800;
+        color: var(--text-color);
+    }
+    .tools h6{
+        background-color: transparent;
+        color: var(--text-color);
+        border: 1px solid var(--main-color);
+    }
+    .project-box p{
+        color: var(--text-color);
     }
     .contact h2{
         justify-content: center;
@@ -697,7 +730,7 @@ span{
 }
 .data-camp h4, .sub-certified h4{
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 .logo-certified{
     display: flex;
@@ -709,7 +742,7 @@ span{
 }
 .logo-certified p{
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 .logo-certified img{
     width: 9rem !important;
@@ -773,7 +806,7 @@ span{
     text-align: center;
     margin: 0 10% 0 10%;
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .portfolio a{
     color: var(--main-color);
