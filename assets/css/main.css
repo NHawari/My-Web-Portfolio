@@ -500,14 +500,16 @@ span{
     
     .project-box{
         background-color: transparent;
+        color: var(--text-color);
         border: 1.5px solid var(--main-color);
     }
     .project-box h4{
         font-weight: 800;
         color: var(--text-color);
+        background-color: transparent !important;
     }
     .tools h6{
-        background-color: transparent;
+        background-color: transparent !important;
         color: var(--text-color);
         border: 1px solid var(--main-color);
     }
@@ -609,14 +611,16 @@ span{
     }
     .project-box{
         background-color: transparent;
+        color: var(--text-color);
         border: 1.5px solid var(--main-color);
     }
     .project-box h4{
         font-weight: 800;
         color: var(--text-color);
+        background-color: transparent !important;
     }
     .tools h6{
-        background-color: transparent;
+        background-color: transparent !important;
         color: var(--text-color);
         border: 1px solid var(--main-color);
     }
