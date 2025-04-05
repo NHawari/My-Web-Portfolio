@@ -19,7 +19,6 @@
 html{
     font-size: 60%;
     overflow-x: hidden;
-    background-image: linear-gradient(180deg, var(--second-bg-color), var(--text-color));
 }
 body{
     background: var(--bg-color);
@@ -425,7 +424,7 @@ span{
     html{
         font-size: 50%;
         overflow-x: hidden;
-        background: transparent;
+        background-image: linear-gradient(180deg, var(--second-bg-color), var(--text-color));
     }
     body{
         width: 60%;
@@ -494,7 +493,7 @@ span{
     html{
         font-size: 50%;
         overflow-x: hidden;
-        background: transparent;
+        background-image: linear-gradient(180deg, var(--second-bg-color), var(--text-color));
     }
     body{
         width: 60%;
