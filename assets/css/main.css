@@ -422,33 +422,53 @@ span{
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     html{
-        font-size: 55%;
+        font-size: 50%;
         overflow-x: hidden;
+        background: transparent;
     }
     body{
         width: 60%;
-        margin: 0 auto;
+        margin: 0 20%;
+    }
+    .header{
+        justify-content: center;
     }
     .index{
-        padding: 5rem 10% 0 10%;
+        min-height: 100vh;
+        padding: 10rem 5% 8rem 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
     }
-    .navmenu{
-        margin: 1rem;
+    .about{
+        padding: 5rem 5%;
     }
-    .nc{
-        display: none;
+    .logo-certified p{
+        max-width: 18rem;
     }
-    .page-link.mobile{
-        display: none;
+    .portfolio{
+        padding: 5rem 5% !important;
     }
-    .about-me p{
-        padding: 0 5rem;
+    .project-container{
+        width: 100%;
+    }
+    .text-home{
         text-align: center;
+        justify-content: center;
     }
-    
     .skill-set {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .certified{
+        display: flex;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .data-camp, .logo-certified{
+        text-align: center !important;
+        justify-content: center !important;
     }
     .contact h2{
         justify-content: center;
@@ -463,19 +483,77 @@ span{
         font-size: 1.2rem;
         font-weight: 600;
     }
-}
-@media screen and (min-width: 1280px){
-    body{
-        width: 60%;
-        margin: 0 auto;
-    }
-    .navmenu{
-        padding: 0.5rem 3rem !important;
-    }
-    .page-link.mobile{
+    .nc{
         display: none;
     }
+}
+@media screen and (min-width: 1280px){
+    html{
+        font-size: 50%;
+        overflow-x: hidden;
+        background: transparent;
+    }
+    body{
+        width: 60%;
+        margin: 0 20%;
+    }
+    .header{
+        justify-content: center;
+    }
+    .index{
+        min-height: 100vh;
+        padding: 10rem 5% 8rem 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .about{
+        padding: 5rem 5%;
+    }
+    .logo-certified p{
+        max-width: 18rem;
+    }
+    .portfolio{
+        padding: 5rem 5% !important;
+    }
+    .project-container{
+        width: 100%;
+    }
+    .text-home{
+        text-align: center;
+        justify-content: center;
+    }
+    .skill-set {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .certified{
+        display: flex;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .data-camp, .logo-certified{
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .contact h2{
+        justify-content: center;
+        text-align: center;
+    }
+    .contact .form .massage .btn{
+        margin-top: 2rem;
+        background-color: var(--main-color);
+        border-radius: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
     .nc{
+        display: none;
+    }
+    .page-link.mobile{
         display: none;
     }
     .about-me p{
