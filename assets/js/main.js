@@ -74,7 +74,7 @@
         });
     });    
 
-    const texts = ["Data Analyst", "Data Scientist", "Data Engineer", "Business Analyst", "Business Intelligence"];
+    const texts = ["Data Analyst", "Data Scientist", "Growth Analyst", "Business Analyst", "Business Intelligence Analyst"];
     const typingSpeed = 100;
     const delayBetweenTexts = 2000; 
     let textIndex = 0;
